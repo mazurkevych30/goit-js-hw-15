@@ -36,7 +36,7 @@ function createBoxes(amount) {
   destroyBoxes();
   const colors = [];
   let height = 30;
-  let weigth = 30;
+  let width = 30;
 
   for (let i = 0; i < amount; i += 1){
     colors.push(getRandomHexColor());
@@ -46,11 +46,11 @@ function createBoxes(amount) {
     const div = document.createElement("div");
 
     div.style.height = `${height}px`;
-    div.style.weigth = `${weigth}px`;
+    div.style.width = `${width}px`;
     div.style.backgroundColor = color;
 
     height += 10;
-    weigth += 10;
+    width += 10;
 
     return div;
   });
