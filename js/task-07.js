@@ -5,6 +5,7 @@ const elements = {
 }
 
 elements.fontSize.addEventListener("input", handlerChangeSize)
+elements.text.style.fontSize = `${elements.fontSize.value}px`;
 
 function handlerChangeSize(evt) {
     elements.text.style.fontSize = `${evt.currentTarget.value}px`
